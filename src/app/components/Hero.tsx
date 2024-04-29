@@ -8,10 +8,10 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="h-screen grid grid-cols-6  bg-blue-950 overflow-hidden">
-      <div className="col-span-4 p-20 flex flex-col items-center justify-center gap-8">
-        <Image src={Logo} alt="logo" className="relative z-10" />
-        <p className="text-white text-3xl font-thin text-center">
+    <div className="h-screen grid grid-cols-6  bg-blue-50 overflow-hidden">
+      <div className="col-span-4 p-20 flex flex-col items-center justify-center gap-16">
+        <Image src={Logo} alt="logo" className="relative" />
+        <p className="text-blue-900 text-3xl">
           Somos una empresa de Ingeniería, Construcción y Servicio con fuerte
           compromiso en la satisfacción del cliente y el establecimiento de
           relaciones de largo plazo.
@@ -20,10 +20,10 @@ const Hero = () => {
           href={"/"}
           className="flex gap-2 items-center bg-orange-600 px-4 py-2 rounded-lg hover:bg-orange-700 hover:scale-105 cursor-pointer transform transition-all duration-300"
         >
-          <span className="text-white text-xl font-semibold">Contacto</span>
+          <span className="text-white text-2xl font-semibold">Contacto</span>
         </Link>
       </div>
-      <div className="col-span-2">
+      <div className="col-span-2 hidden md:flex">
         <Image
           src={Atucha}
           alt="atucha"

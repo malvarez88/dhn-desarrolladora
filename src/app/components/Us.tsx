@@ -4,9 +4,9 @@ import Bg from "../../../public/home4.jpg";
 
 const Us = () => {
   return (
-    <div className="bg-slate-50 flex flex-col p-20">
+    <div className="bg-blue-950 flex flex-col p-20">
       <div className="grid grid-cols-2 gap-8">
-        <div className="col-span-1 shadow-lg h-full w-full rounded-xl p-10 flex flex-col gap-8 bg-white">
+        <div className="col-span-1 shadow-lg h-full w-full rounded-xl p-10 flex flex-col gap-8 bg-blue-50">
           <h1 className="text-2xl font-bold text-orange-600">
             Nuestra Empresa
           </h1>
@@ -33,7 +33,7 @@ const Us = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-1 shadow-lg h-full w-full rounded-xl p-10 flex flex-col gap-10 bg-white items-center">
+        <div className="col-span-1 shadow-lg h-full w-full rounded-xl p-10 flex flex-col gap-10 bg-blue-50 items-center">
           <Image src={Bg} alt="us" className="rounded-lg bg-cover h-80" />
           <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full">
             <div className="bg-slate-50 p-4 shadow-md rounded-lg">
