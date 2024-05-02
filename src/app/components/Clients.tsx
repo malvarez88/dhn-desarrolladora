@@ -28,10 +28,10 @@ const repeatedImages = [...images, ...images];
 const Clients: React.FC = () => {
   return (
     <div
-      className="flex p-20 h-full bg-neutral-50 flex-col items-center justify-center"
+      className="flex p-20 h-full bg-white flex-col items-center justify-center"
       id="clients"
     >
-      <h1 className="text-neutral-950 text-4xl font-bold mb-10">Clientes</h1>
+      <h1 className="text-black text-4xl font-bold mb-10">Clientes</h1>
       <div className="relative flex overflow-x-hidden gap-20 items-center">
         {/* <div className="animate-marquee whitespace-nowrap flex gap-32 hover:animation-paused"> */}
         {images.map((image, index) => (

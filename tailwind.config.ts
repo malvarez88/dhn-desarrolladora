@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   mode: "jit",
@@ -20,6 +21,15 @@ const config: Config = {
       },
       paused: "paused",
       running: "running",
+    },
+    colors: {
+      ...colors,
+      primary: "#223863",
+      secondary: "#3f68b8",
+      black: "#05080e",
+      transparent: "transparent",
+      white: "#fff",
+      orange: "#ea580c",
     },
   },
   plugins: [],

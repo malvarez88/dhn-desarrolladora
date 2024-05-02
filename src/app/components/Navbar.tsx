@@ -7,7 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneSquare } from "react-icons/fa";
-import Logo from "../../../public/logo.png";
+import Logo from "../assets/icons/Logo";
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="fixed z-10 opacity-90">
       <div
-        className="bg-blue-900 fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-700 hover:scale-105 cursor-pointer transform transition-all duration-300"
+        className="bg-secondary fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-600 hover:scale-105 cursor-pointer transform transition-all duration-300"
         onClick={toggleMenu}
       >
         <RxHamburgerMenu className="text-white w-6 h-6" />
@@ -37,10 +37,10 @@ const Navbar: React.FC = () => {
             menuVisible ? "" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center">
-            <Image src={Logo} alt="logo" width={150} className="mt-5" />
+          <div className="flex items-center mt-6">
+            <Logo width={100} height={50} />
             <div
-              className="bg-blue-900 fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-700 hover:scale-105 cursor-pointer transform transition-all duration-300"
+              className="bg-secondary fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-600 hover:scale-105 cursor-pointer transform transition-all duration-300"
               onClick={toggleMenu}
             >
               <AiOutlineClose className="text-white w-6 h-6" />

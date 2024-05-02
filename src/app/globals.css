@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+ .mask-gradient {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+}
+}
