@@ -4,13 +4,13 @@ import Bg from "../../../public/home4.jpg";
 
 const Us: React.FC = () => {
   return (
-    <div className="bg-black flex flex-col p-20" id="us">
-      <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8">
-        <div className="col-span-1 h-full w-full rounded-xl p-10 flex flex-col gap-8 bg-white">
-          <h1 className="text-2xl font-bold text-orange">Nuestra Empresa</h1>
+    <div className="bg-slate-100 flex flex-col px-40 py-20 relative" id="us">
+      <div className="flex flex-col gap-10">
+        <div className="h-full w-full rounded-xl  flex flex-col gap-8">
+          <h1 className="text-3xl font-bold text-orange">Nuestra Empresa</h1>
           <div>
-            <h3 className="text-5xl font-bold mb-4 text-primary">Misión</h3>
-            <p className="text-black text-lg">
+            <h3 className="text-3xl font-bold mb-4 text-black">Misión</h3>
+            <p className="text-black text-xl">
               Ser una empresa líder en el sector de la ingeniería y
               construcción, con un equipo comprometido, evolucionando
               constantemente nuestros servicios para ofrecer soluciones
@@ -20,8 +20,8 @@ const Us: React.FC = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-5xl font-bold mb-4 text-primary">Visión</h3>
-            <p className="text-black text-lg">
+            <h3 className="text-3xl font-bold mb-4 text-black">Visión</h3>
+            <p className="text-black text-xl">
               Brindar servicios de ingeniería, construcción, y mantenimiento
               contribuyendo así con el éxito de nuestros clientes. Nuestro
               accionar privilegia la calidad, la seguridad y la preservación del
@@ -31,33 +31,13 @@ const Us: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-1  h-full w-full rounded-xl p-10 flex flex-col gap-10 bg-white items-center">
-          <Image src={Bg} alt="us" className="rounded-lg bg-cover h-80" />
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full">
-            <div className="bg-slate-50 p-4 shadow rounded-lg">
-              <p className="text-3xl font-bold mb-2 text-orange">20</p>
-              <span className="text-base text-slate-950">
-                Años en el mercado
-              </span>
-            </div>
-            <div className="bg-slate-50 p-4 shadow rounded-lg">
-              <p className="text-3xl font-bold mb-2 text-orange">18</p>
-              <span className="text-base text-slate-950">Clientes</span>
-            </div>
-            <div className="bg-slate-50 p-4 shadow rounded-lg">
-              <p className="text-3xl font-bold mb-2 text-orange">+ 200</p>
-              <span className="text-base text-slate-950">
-                Proyectos ejecutados
-              </span>
-            </div>
-            <div className="bg-slate-50 p-4 shadow rounded-lg">
-              <p className="text-3xl font-bold mb-2 text-orange">22.000.000</p>
-              <span className="text-base text-slate-950">
-                Horas por administración
-              </span>
-            </div>
-          </div>
-        </div>
+        {/* <div className="flex items-center justify-center overflow-hidden">
+          <Image
+            src={Bg}
+            alt="atucha"
+            className="rounded-xl h-80 object-cover"
+          />
+        </div> */}
       </div>
     </div>
   );

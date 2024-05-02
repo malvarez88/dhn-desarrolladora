@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="fixed z-10 opacity-90">
+    <div className="fixed z-50 opacity-90">
       <div
         className="bg-secondary fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-600 hover:scale-105 cursor-pointer transform transition-all duration-300"
         onClick={toggleMenu}
