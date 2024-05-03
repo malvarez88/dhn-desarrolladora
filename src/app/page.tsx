@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Bg from "../../public/home4.jpg";
-import Logo from "../../public/logo.png";
+"use client";
+import { useState, useEffect } from "react";
+
 import Hero from "./components/Hero";
 import Us from "./components/Us";
 import Action from "./components/Action";
@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Hero />
       <Us />
-      <Section />
       <Action />
+      <Section />
       <Certifications />
       <Clients />
       <Contact />

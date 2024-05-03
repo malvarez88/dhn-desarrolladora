@@ -10,10 +10,10 @@ import Atucha from "../../../public/atucha-1.jpg";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
+    <div className="flex items-center justify-center h-screen bg-black w-full">
       <div className="flex absolute z-20 flex-col items-center justify-start pt-36 gap-16 h-full">
-        <Logo2 width={400} height={300} className="" />
-        <p className="text-slate-300 text-4xl font-bold leading-tigth">
+        <Logo2 className="w-24 h-18 sm:w-32 sm:h-24 md:w-48 md:h-36 lg:w-64 lg:h-48 xl:w-96 xl:h-80" />
+        <p className="text-slate-300 text-2xl lg:text-4xl font-bold leading-tigth">
           Ingeniería, Construcción y Servicios
         </p>
         <div className="flex gap-10">
@@ -31,22 +31,34 @@ const Hero: React.FC = () => {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full absolute bottom-16 px-40">
+      <div className="lg:flex grid grid-cols-2 gap-4 items-center justify-between w-full absolute bottom-4 lg:bottom-16 px-2 lg:px-40">
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl font-bold mb-2 text-slate-200">20 +</p>
-          <span className="text-xl text-slate-300">Años en el mercado</span>
+          <p className="text-xl lg:text-3xl font-bold mb-2 text-slate-200">
+            20 +
+          </p>
+          <span className="text-lg lg:text-xl text-slate-300">
+            Años en el mercado
+          </span>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl font-bold mb-2 text-slate-200">18</p>
-          <span className="text-xl text-slate-300">Clientes</span>
+          <p className="text-xl lg:text-3xl font-bold mb-2 text-slate-200">
+            18
+          </p>
+          <span className="text-lg lg:text-xl text-slate-300">Clientes</span>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl font-bold mb-2 text-slate-200">300 +</p>
-          <span className="text-xl text-slate-300">Proyectos ejecutados</span>
+          <p className="text-xl lg:text-3xl font-bold mb-2 text-slate-200">
+            300 +
+          </p>
+          <span className="text-lg lg:text-xl text-slate-300">
+            Proyectos ejecutados
+          </span>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl font-bold mb-2 text-slate-200">30.000.000</p>
-          <span className="text-xl text-slate-300">
+          <p className="text-xl lg:text-3xl font-bold mb-2 text-slate-200">
+            30.000.000
+          </p>
+          <span className="text-lg lg:text-xl text-slate-300">
             Horas por administración
           </span>
         </div>
