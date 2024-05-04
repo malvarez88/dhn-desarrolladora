@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Atucha from "../../../public/atucha-1.jpg";
 
-const Section = () => {
+const Section: React.FC = () => {
   return (
     <div className="overflow-hidden h-auto lg:h-[500px]">
       <video

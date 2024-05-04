@@ -48,6 +48,7 @@ const Clients: React.FC = () => {
               width={180}
               height={1800}
               className="object-contain hover:animation-paused h-full"
+              priority
             />
           </a>
         ))}
