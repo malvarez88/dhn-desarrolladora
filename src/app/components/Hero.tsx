@@ -12,17 +12,18 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-evenly min-h-screen bg-black w-full p-6 sm:px-10 md:px-20 lg:p-28">
       <div className="flex z-20 flex-col items-center justify-center gap-8 h-full w-full mt-20 lg:mt-0">
-        <div className="lg:-mt-20 w-auto">
+        <div className="lg:-mt-20">
           <Logo
             width={200}
             height={200}
-            className=""
             // className="w-24 h-18 sm:w-32 sm:h-24 md:w-48 md:h-36 lg:w-64 lg:h-48 xl:w-96 xl:h-80"
           />
         </div>
+
         <p className="text-slate-300 mt-6 text-2xl lg:text-5xl font-thin leading-tigth uppercase tracking-widest text-center">
           Ingeniería, Construcción y Servicios
         </p>
+
         <div className="flex gap-4 lg:gap-10 mt-6">
           <Link
             href={"#action"}
