@@ -16,7 +16,7 @@ export default function Home() {
       <Us />
       <Action />
       <Section />
-      {/* <Certifications /> */}
+      <Certifications />
       <Clients />
       <Contact />
     </>

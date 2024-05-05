@@ -20,15 +20,15 @@ const Certifications: React.FC = () => {
 
   return (
     <div
-      className="bg-black flex items-center justify-center p-20 flex-col gap-8"
+      className="bg-black flex items-center justify-center py-20 p-4 md:p-10 lg:p-20 flex-col gap-8"
       id="certifications"
     >
-      <h1 className="text-white text-4xl font-bold">Certificaciones</h1>
-      <p className="text-white text-xl">
+      <h1 className="text-slate-200 text-4xl font-bold">Certificaciones</h1>
+      <p className="text-slate-100 text-xl text-center">
         Nuestra empresa cuenta con certificados de calidad y ejecución de obras
         civiles en Centrales Nucleares de Generación de Energía.
       </p>
-      <div className="flex gap-20">
+      <div className="flex gap-20 flex-col lg:flex-row">
         <Image
           src={ISO}
           alt="iso"
