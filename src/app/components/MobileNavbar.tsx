@@ -9,6 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneSquare } from "react-icons/fa";
 import Logo from "../assets/icons/Logo";
 
+
 const MobileNavbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
 
