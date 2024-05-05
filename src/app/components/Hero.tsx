@@ -10,11 +10,11 @@ import Atucha from "../../../public/atucha-1.jpg";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-evenly min-h-screen bg-black w-full p-6 sm:p-20 lg:p-28">
+    <div className="flex flex-col items-center justify-evenly min-h-screen bg-black w-full p-6 sm:px-10 md:px-20 lg:p-28">
       <div className="flex z-20 flex-col items-center justify-center gap-8 h-full w-full mt-20 lg:mt-0">
-        <div className="lg:-mt-20">
+        <div className="lg:-mt-20 w-auto">
           <Logo
-            width={400}
+            width={200}
             height={200}
             className=""
             // className="w-24 h-18 sm:w-32 sm:h-24 md:w-48 md:h-36 lg:w-64 lg:h-48 xl:w-96 xl:h-80"
@@ -23,51 +23,55 @@ const Hero: React.FC = () => {
         <p className="text-slate-300 mt-6 text-2xl lg:text-5xl font-thin leading-tigth uppercase tracking-widest text-center">
           Ingeniería, Construcción y Servicios
         </p>
-        <div className="flex gap-10 mt-6">
+        <div className="flex gap-4 lg:gap-10 mt-6">
           <Link
             href={"#action"}
-            className="flex gap-2 items-center bg-slate-200 border border-primary px-6 py-2 rounded-xl hover:bg-orange hover:scale-105 cursor-pointer transform transition-all duration-300"
+            className="flex items-center bg-slate-200 border border-primary px-6 py-2 rounded-xl hover:bg-orange hover:scale-105 cursor-pointer transform transition-all duration-300"
           >
-            <span className="text-primary text-sm uppercase">
+            <span className="text-primary text-sm uppercase whitespace-nowrap">
               Areas de Accion
             </span>
           </Link>
           <Link
             href={"#contact"}
-            className="flex gap-2 items-center border border-slate-200 px-6 py-2 rounded-xl hover:bg-orange hover:scale-105 cursor-pointer transform transition-all duration-300 backdrop-blur"
+            className="items-center border border-slate-200 px-6 py-2 rounded-xl hover:bg-orange hover:scale-105 cursor-pointer transform transition-all duration-300 backdrop-blur"
           >
-            <span className="text-slate-100 text-sm uppercase">Contacto</span>
+            <span className="text-slate-100 text-sm uppercase whitespace-nowrap">
+              Contacto
+            </span>
           </Link>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 items-center justify-between w-full mt-28 px-2 xl:px-40 bottom-10 xl:absolute">
+      <div className="grid grid-cols-2 lg:flex flex-col lg:flex-row gap-y-4 gap-x-8 items-center justify-between w-full mt-10 lg:mt-28 px-2 xl:px-40 bottom-10 xl:absolute whitespace-nowrap">
         <div className="flex flex-col items-center justify-center border-b border-slate-200 pb-2">
-          <p className="text-xl lg:text-2xl font-bold mb-2 text-slate-200">
+          <p className="text-xl lg:text-2xl font-bold md:mb-2 text-slate-200">
             20 +
           </p>
-          <span className="text-base lg:text-lg text-slate-300">
+          <span className="text-sm sm:text-base lg:text-lg text-slate-300">
             Años en el mercado
           </span>
         </div>
         <div className="flex flex-col items-center justify-center border-b border-slate-200 pb-2">
-          <p className="text-xl lg:text-2xl font-bold mb-2 text-slate-200">
+          <p className="text-xl lg:text-2xl font-bold md:mb-2 text-slate-200">
             18
           </p>
-          <span className="text-base lg:text-lg text-slate-300">Clientes</span>
+          <span className="text-sm sm:text-base lg:text-lg text-slate-300">
+            Clientes
+          </span>
         </div>
         <div className="flex flex-col items-center justify-center border-b border-slate-200 pb-2">
-          <p className="text-xl lg:text-2xl font-bold mb-2 text-slate-200">
+          <p className="text-xl lg:text-2xl font-bold md:mb-2 text-slate-200">
             300 +
           </p>
-          <span className="text-base lg:text-lg text-slate-300">
+          <span className="text-sm sm:text-base lg:text-lg text-slate-300">
             Proyectos ejecutados
           </span>
         </div>
         <div className="flex flex-col items-center justify-center border-b border-slate-200 pb-2">
-          <p className="text-xl lg:text-2xl font-bold mb-2 text-slate-200">
+          <p className="text-xl lg:text-2xl font-bold md:mb-2 text-slate-200">
             30.000.000
           </p>
-          <span className="text-base lg:text-lg text-slate-300">
+          <span className="text-sm sm:text-base lg:text-lg text-slate-300">
             Horas por administración
           </span>
         </div>

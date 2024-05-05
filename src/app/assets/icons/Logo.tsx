@@ -1,6 +1,6 @@
 const Logo: React.FC<React.SVGAttributes<HTMLOrSVGElement>> = ({
   className,
-  width = 500,
+  width = 300,
   height = 200,
   ...rest
 }) => (

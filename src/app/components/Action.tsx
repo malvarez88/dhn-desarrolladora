@@ -22,7 +22,7 @@ const Action: React.FC = () => {
               href={"/area-de-accion/[name]"}
             >
               <div className="mb-4">{action.icon}</div>
-              <p className="text-slate-200 text-3xl font-bold uppercase mb-2">
+              <p className="text-slate-200 text-2xl lg:text-3xl font-bold uppercase mb-2">
                 {action.name}
               </p>
               <span className="text-slate-400 text-lg font-thin">
