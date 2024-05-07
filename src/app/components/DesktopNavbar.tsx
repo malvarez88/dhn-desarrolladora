@@ -28,15 +28,18 @@ const DesktopNavbar: React.FC = () => {
   });
 
   return (
-    <div className="fixed w-full px-10 py-6 backdrop-blur-sm z-[999]">
+    <div className="fixed w-full px-10 py-4 backdrop-blur-sm z-[999]">
       <div className="flex align-center justify-between">
-        <div className="bg-black w-auto h-auto p-2 rounded-full" ref={logoRef}>
+        <div
+          className="bg-slate-200 w-auto h-auto p-2 rounded-full"
+          ref={logoRef}
+        >
           <Link href={"/"}>
-            <Logo width={20} height={20} />
+            <Logo width={25} height={25} />
           </Link>
         </div>
         <ul
-          className="flex items-center justify-center gap-10 text-slate-200 text-lg uppercase"
+          className="flex items-center justify-center gap-10 text-slate-200 text-base uppercase"
           ref={ulRef}
         >
           <li className="hover:underline hover:scale-105 cursor-pointer">
@@ -46,10 +49,10 @@ const DesktopNavbar: React.FC = () => {
             <Link href={"#us"}>Sobre Nosotros</Link>
           </li>
           <li className="hover:underline hover:scale-105 cursor-pointer">
-            <Link href={"#proyectos"}>Proyectos</Link>
+            <Link href={"#action"}>Servicios</Link>
           </li>
           <li className="hover:underline hover:scale-105 cursor-pointer">
-            <Link href={"#contacto"}>Contacto</Link>
+            <Link href={"#contact"}>Contacto</Link>
           </li>
         </ul>
       </div>

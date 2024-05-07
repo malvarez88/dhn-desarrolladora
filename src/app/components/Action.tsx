@@ -30,7 +30,7 @@ const Action: React.FC = () => {
         y: 20,
         duration: 0.5,
         delay: 0.5,
-        stagger: 0.3,
+        stagger: 0.5,
         ease: "power1.out",
         scrollTrigger: {
           trigger: actionUlRef.current,
