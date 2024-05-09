@@ -42,7 +42,7 @@ const Action: React.FC = () => {
   });
   return (
     <div
-      className="h-full bg-black flex flex-col items-center overflow-hidden p-10 lg:p-20 xl:px-40 gap-10"
+      className="h-full bg-black flex flex-col items-center overflow-hidden p-10 lg:p-20 xl:px-40 gap-10 relative z-50"
       id="action"
     >
       <h1

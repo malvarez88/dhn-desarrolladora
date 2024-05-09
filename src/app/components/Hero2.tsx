@@ -12,35 +12,56 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero2: React.FC = () => {
   const imgRef = useRef(null);
   const imgContainerRef = useRef(null);
-  //   useGSAP(() => {
-  //     const tl = gsap.timeline();
-  //     tl.to(imgContainerRef.current, {
-  //       position: "fixed",
-  //       ease: "power1.out",
-  //       top: 0,
-  //       scrollTrigger: {
-  //         trigger: imgContainerRef.current,
-  //         start: "top top",
-  //         end: "bottom bottom",
-  //       },
-  //     });
+  const contentRef = useRef(null);
+  useGSAP(() => {
+    const tl = gsap.timeline();
 
-  //     tl.to(imgRef.current, {
-  //       scale: 1.4,
-  //       duration: 1,
-  //       ease: "power1.out",
-  //       scrollTrigger: {
-  //         trigger: imgRef.current,
-  //         start: "top 20%",
-  //         end: "150vh top",
-  //         markers: true,
-  //         scrub: 1,
-  //       },
-  //     });
-  //   });
+    tl.to(contentRef.current, {
+      opacity: 0,
+      y: -400,
+      duration: 4,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: imgRef.current,
+        start: "top 30%",
+        end: "bottom bottom",
+        // markers: true,
+        scrub: true,
+      },
+    });
+
+    tl.to(imgContainerRef.current, {
+      position: "fixed",
+      ease: "power1.inOut",
+      top: "110px",
+      scrollTrigger: {
+        trigger: imgContainerRef.current,
+        start: "-110px top",
+        end: "110px bottom",
+        scrub: true,
+        // markers: true,
+      },
+    });
+    tl.to(imgRef.current, {
+      scale: 1.5,
+      duration: 1.2,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: imgRef.current,
+        start: "top 30%",
+        end: "bottom bottom",
+        markers: true,
+        pin: imgRef.current,
+        scrub: true,
+      },
+    });
+  });
   return (
-    <div className="flex flex-col items-center  h-[200vh] bg-black w-full pt-20 p-6 sm:px-10 md:px-20 overflow-hidden">
-      <div className="flex flex-col items-center justify-center mt-20 w-full">
+    <div className="flex flex-col items-center h-[150vh] bg-black w-full pt-20 p-6 sm:px-10 md:px-20 overflow-hidden">
+      <div
+        className="flex flex-col items-center justify-center mt-20 w-full opacity-100 mb-20"
+        ref={contentRef}
+      >
         <h1 className="text-transparent text-6xl font-bold bg-gradient-to-b from-primary to-secondary bg-clip-text">
           DHN CONSTRUCCIONES
         </h1>
@@ -51,7 +72,7 @@ const Hero2: React.FC = () => {
           Ingeniería, Construcción y Servicios
         </p>
         <ul
-          className="grid grid-cols-2 lg:flex flex-col lg:flex-row gap-y-4 gap-x-8 items-center justify-between w-full mt-10 px-2 xl:px-40 whitespace-nowrap relative z-10"
+          className="grid grid-cols-2 lg:flex flex-col lg:flex-row gap-y-4 gap-x-8 items-center justify-between w-full mt-10 px-2 xl:px-40 whitespace-nowrap relative z-[100]"
           //   ref={ulRef}
         >
           <li className="flex flex-col items-center justify-center border-b border-slate-200 pb-2">
@@ -88,18 +109,17 @@ const Hero2: React.FC = () => {
           </li>
         </ul>
       </div>
+
       <div
-        className="opacity-40 w-full h-full flex items-center justify-center"
+        className="opacity-40 w-full h-auto flex items-center justify-center rounded-xl"
         ref={imgContainerRef}
       >
-        <div>
-          <Image
-            src={Atucha}
-            alt="atucha"
-            ref={imgRef}
-            className="rounded-xl"
-          />
-        </div>
+        <Image
+          src={Atucha}
+          alt="atucha"
+          ref={imgRef}
+          className="rounded-xl mt-20"
+        />
       </div>
     </div>
   );

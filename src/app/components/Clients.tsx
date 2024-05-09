@@ -28,7 +28,7 @@ const repeatedImages = [...images, ...images];
 const Clients: React.FC = () => {
   return (
     <div
-      className="flex p-4 py-20 md:p-10 lg:p-20 h-full bg-white flex-col items-center justify-center"
+      className="flex p-4 py-20 md:p-10 lg:p-20 h-full bg-white flex-col items-center relative z-50 justify-center"
       id="clients"
     >
       <div className="flex items-start justify-center col-span-1 relative">

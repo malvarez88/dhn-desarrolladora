@@ -80,7 +80,7 @@ const Us: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col px-4 md:px-10 lg:px-20 xl:px-40 py-20 gap-10 bg-gradient-to-b from-primary to-black border-t border-slate-200"
+      className="flex flex-col px-4 md:px-10 lg:px-20 xl:px-40 py-20 gap-10 bg-gradient-to-b from-primary to-black border-t border-slate-200 relative z-50"
       id="us"
     >
       <div className="flex items-start justify-center col-span-1 relative">

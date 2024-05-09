@@ -38,7 +38,7 @@ const Certifications: React.FC = () => {
 
   return (
     <div
-      className="bg-black flex items-center justify-center py-20 p-4 md:p-10 lg:p-20 flex-col gap-8"
+      className="bg-black flex items-center justify-center py-20 p-4 md:p-10 lg:p-20 flex-col gap-8 relative z-50"
       id="certifications"
     >
       <h1 className="text-slate-200 text-4xl font-bold">Certificaciones</h1>

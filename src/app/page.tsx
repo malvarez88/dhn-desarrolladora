@@ -12,7 +12,7 @@ import Section from "./components/Section";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       <Hero2 />
       <Us />
       <Action />
@@ -20,6 +20,6 @@ export default function Home() {
       <Certifications />
       <Clients />
       <Contact />
-    </>
+    </div>
   );
 }
