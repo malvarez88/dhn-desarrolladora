@@ -33,31 +33,31 @@ const Hero2: React.FC = () => {
     tl.to(imgContainerRef.current, {
       position: "fixed",
       ease: "power1.inOut",
-      top: "110px",
+      top: "30px",
       scrollTrigger: {
         trigger: imgContainerRef.current,
-        start: "-110px top",
+        start: "-30px top",
         end: "110px bottom",
         scrub: true,
-        // markers: true,
+        markers: true,
       },
     });
     tl.to(imgRef.current, {
-      scale: 1.5,
+      scale: 1.2,
       duration: 1.2,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: imgRef.current,
         start: "top 30%",
         end: "bottom bottom",
-        markers: true,
+        // markers: true,
         pin: imgRef.current,
         scrub: true,
       },
     });
   });
   return (
-    <div className="flex flex-col items-center h-[150vh] bg-black w-full pt-20 p-6 sm:px-10 md:px-20 overflow-hidden">
+    <div className="flex flex-col items-center h-[150vh] bg-gradient-to-b from-black to-primary w-full pt-20 p-6 sm:px-10 md:px-20 overflow-hidden">
       <div
         className="flex flex-col items-center justify-center mt-20 w-full opacity-100 mb-20"
         ref={contentRef}
@@ -111,7 +111,7 @@ const Hero2: React.FC = () => {
       </div>
 
       <div
-        className="opacity-40 w-full h-auto flex items-center justify-center rounded-xl"
+        className="opacity-50 w-full h-auto flex items-center justify-center rounded-xl"
         ref={imgContainerRef}
       >
         <Image
