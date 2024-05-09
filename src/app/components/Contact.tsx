@@ -6,7 +6,7 @@ import { FaPhoneSquare } from "react-icons/fa";
 const Contact: React.FC = () => {
   return (
     <div
-      className="bg-black py-20 grid items-center justify-center gap-10 grid-cols-1 lg:grid-cols-2 px-10 lg:px-20 xl:px-40"
+      className="bg-black py-20 grid items-center justify-center gap-10 grid-cols-1 lg:grid-cols-2 px-10 lg:px-20 xl:px-40 relative z-50"
       id="contact"
     >
       <div className="flex flex-col gap-4">
