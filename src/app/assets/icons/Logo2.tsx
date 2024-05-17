@@ -1,4 +1,15 @@
-const Logo2: React.FC<React.SVGAttributes<HTMLOrSVGElement>> = ({
+interface Logo2Props extends React.SVGAttributes<HTMLOrSVGElement> {
+  width?: number;
+  height?: number;
+  color?: string;
+  className?: string;
+}
+
+// 375d9b primary E2E8F0
+// 223863 secondary 94A3B8
+// 212f44 shadow  475569
+
+const Logo2: React.FC<Logo2Props> = ({
   className,
   width = 200,
   height = 200,

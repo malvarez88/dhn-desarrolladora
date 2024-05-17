@@ -9,6 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneSquare } from "react-icons/fa";
 import Logo from "../assets/icons/Logo";
 
+
 const MobileNavbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
 
@@ -40,7 +41,7 @@ const MobileNavbar: React.FC = () => {
           <div className="flex items-center mt-6">
             <Logo width={100} height={50} />
             <div
-              className="bg-primary fixed rounded-full top-8 right-8 h-14 w-14 flex items-center justify-center hover:bg-orange-600 hover:scale-105 cursor-pointer transform transition-all duration-300"
+              className="bg-primary fixed rounded-full top-[2%] right-[2%] h-14 w-14 flex items-center justify-center hover:bg-orange-600 hover:scale-105 cursor-pointer transform transition-all duration-300"
               onClick={toggleMenu}
             >
               <AiOutlineClose className="text-white w-6 h-6" />
