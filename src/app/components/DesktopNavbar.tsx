@@ -28,7 +28,7 @@ const DesktopNavbar: React.FC = () => {
   });
 
   return (
-    <div className="fixed w-full px-10 py-6 backdrop-blur-sm z-[999]">
+    <div className="fixed w-full px-10 py-6 backdrop-blur-sm z-[50]">
       <div className="flex align-center justify-between">
         <div className="bg-black w-auto h-auto p-2 rounded-full" ref={logoRef}>
           <Link href={"/"}>
