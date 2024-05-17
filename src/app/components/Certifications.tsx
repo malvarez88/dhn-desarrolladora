@@ -1,22 +1,40 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import ISO from "../../../public/Certificado-ISO-DHN.jpeg";
 import Nuclear from "../../../public/Certificado-Nuclear.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Certifications: React.FC = () => {
-  // Estado para controlar qué imagen está seleccionada
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const fullScreenRef = useRef<HTMLDivElement>(null);
 
-  // Función para manejar el clic en una imagen
   const handleImageClick = (src: string) => {
     setSelectedImage(src);
   };
 
-  // Función para cerrar la imagen a ancho completo
   const closeFullScreenImage = () => {
     setSelectedImage(null);
   };
+
+  useGSAP(() => {
+    if (fullScreenRef.current) {
+      if (selectedImage) {
+        gsap.to(fullScreenRef.current, {
+          opacity: 1,
+          duration: 0.5,
+          ease: "power1.out",
+        });
+      } else {
+        gsap.to(fullScreenRef.current, {
+          opacity: 0,
+          duration: 0.5,
+          ease: "power1.out",
+        });
+      }
+    }
+  }, [selectedImage]);
 
   return (
     <div
@@ -49,8 +67,9 @@ const Certifications: React.FC = () => {
 
       {selectedImage && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50"
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50 opacity-0"
           onClick={closeFullScreenImage}
+          ref={fullScreenRef}
         >
           <Image
             src={selectedImage}
